@@ -1,22 +1,22 @@
 programa
 {
-	
-inteiro volume = 100
+	inclua biblioteca Sons --> m
+	inclua biblioteca Util --> u
+	inteiro volume = 100
+	inteiro froot[] = {m.carregar_som("INTRO.mp3")}
 	funcao inicio()
 	{
-	
+	     
+		m.reproduzir_som(froot[0], verdadeiro)
+		u.aguarde(2900)
 		menu()
 	}
 	funcao menu()
 	{
 		limpa()
 		inteiro input
-		escreva("#### #####     ###  ###  ######\n")
-escreva("##   ##  ##  ##   ##   ##  ##\n")
-escreva("#### #####   #    #     #  ##\n")
-escreva("##   ## ##   ##   ##   ##  ##\n")
-escreva("##   ##  ##    ###  ###    ##\n")
-		escreva("\n[1] Começar   [2]Opçoes\n")
+		logo("          ")
+		escreva("\n            [1] Começar   [2]Opçoes\n")
 		leia(input)
 		escolha(input)
 		{
@@ -37,6 +37,7 @@ escreva("##   ##  ##    ###  ###    ##\n")
 	{
 		inteiro input
 		limpa()
+		m.definir_volume_reproducao(froot[0], volume)
 		escreva("[0] Voltar \n\n")
 		escreva("[1] Volume = ", volume)
 		escreva("\n")
@@ -44,17 +45,21 @@ escreva("##   ##  ##    ###  ###    ##\n")
 		escolha(input)
 		{
 			caso 0: menu()
+			pare
+			caso 1:
+			limpa()
+			escreva("VOLUME: ")
+			leia(volume)
+			opcoes()
+			pare
 		}
 	}
+	funcao logo(cadeia espaco)
+	{
+	escreva(espaco,"#### #####    ###  ###  ######\n")
+	escreva(espaco,"##   ##  ## ##   ##   ##  ##\n")
+	escreva(espaco,"#### #####  #    #     #  ##\n")
+	escreva(espaco,"##   ## ##  ##   ##   ##  ##\n")
+	escreva(espaco,"##   ##  ##   ###  ###    ##\n")
+	}
 }
-/* $$$ Portugol Studio $$$ 
- * 
- * Esta seção do arquivo guarda informações do Portugol Studio.
- * Você pode apagá-la se estiver utilizando outro editor.
- * 
- * @POSICAO-CURSOR = 406; 
- * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = ;
- * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
- * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
- */
