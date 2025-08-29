@@ -30,8 +30,24 @@ programa
 	funcao escolher_froota()
 	{
 		limpa()
-		escreva("    Escolha sua froota: ")
-		escreva("\n   [1] Maça   [2]Uva\n   [3]Abacaxi\n")
+		escreva("Escolha sua froota: ")
+		escreva("\n\n")
+		escreva("    \\V/           \n")	        
+		escreva("    \\V/       \\|  \n")
+		escreva("    ###      ## ## \n") 
+		escreva("   # ###    # #  ##\n")
+		escreva("  ###   #    # # # \n")
+		escreva("  #   ###     # #  \n")
+		escreva("   #####       #   \n")
+		escreva("[1]Abacaxi [2]Uva  \n")
+		escreva("—————————— ————————\n")
+
+
+
+
+
+
+
 	}
 	funcao opcoes()
 	{
