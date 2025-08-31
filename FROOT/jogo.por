@@ -32,15 +32,21 @@ programa
 		limpa()
 		escreva("Escolha sua froota: ")
 		escreva("\n\n")
-		escreva("    \\V/           \n")	        
-		escreva("    \\V/       \\|  \n")
-		escreva("    ###      ## ## \n") 
-		escreva("   # ###    # #  ##\n")
-		escreva("  ###   #    # # # \n")
-		escreva("  #   ###     # #  \n")
-		escreva("   #####       #   \n")
-		escreva("[1]Abacaxi [2]Uva  \n")
-		escreva("—————————— ————————\n")
+		escreva("    \\V/                     \n")	        
+		escreva("    \\V/      \\|         /   \n")
+		escreva("    ###     ## ##    ###/### \n") 
+		escreva("   # ###   # #  ##  #      ##\n")
+		escreva("  ###   #   # # #   #     #  \n")
+		escreva("  #   ###    # #     #     # \n")
+		escreva("   #####      #       #####  \n")
+		escreva("[1]Abacaxi [2]Uva   [3] Maçã  \n")
+		escreva("—————————— ———————— ————————— \n")
+
+
+
+
+
+
 
 
 
@@ -72,10 +78,10 @@ programa
 	}
 	funcao logo(cadeia espaco)
 	{
-	escreva(espaco,"#### #####    ###  ###  ######\n")
-	escreva(espaco,"##   ##  ## ##   ##   ##  ##\n")
-	escreva(espaco,"#### #####  #    #     #  ##\n")
-	escreva(espaco,"##   ## ##  ##   ##   ##  ##\n")
-	escreva(espaco,"##   ##  ##   ###  ###    ##\n")
+	escreva(" ★   .  . #### #####    ###  ###  ###### .     ★  \n")
+	escreva("    .     ##   ##  ## ##   ##   ##  ## .    .    .\n")
+	escreva(" .     .  #### #####  #    #     #  ##    .   .   \n")
+	escreva("  .  .    ##   ## ##  ##   ##   ##  ##      ★     \n")
+	escreva(" .     ★  ##   ##  ##   ###  ###    ##   .     .  \n")
 	}
 }
