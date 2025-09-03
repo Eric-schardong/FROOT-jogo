@@ -77,8 +77,6 @@ programa
 		escreva("—————————— ———————— ————————— —————————\n")
 		leia(input)
 		froota = frootas[input - 1]
-		limpa()
-		historia()
 		escolha(input)
 		{
 			caso 1:
@@ -91,6 +89,9 @@ programa
 			propriedades_froota[1] = 0
 			pare
 		}
+		limpa()
+		carregar(3)
+		historia()
 		
 	}
 	funcao opcoes()
@@ -132,8 +133,11 @@ programa
 	}
 	funcao historia()
 	{
-		escrever_delay("Era uma vez um(a) " , 100)
-	}
+		escrever_delay("..." , 500)
+		escrever_delay("1 de setembro... querido diario, hoje vou sair pra procurar um emprego\n preciso de dinheiro para pagar a faculdade, sera que meu curriculo ta bom o suficiente? \n" , 125)
+		escreva(" ____________________________________________________________________\n|                                                                    |\n| Marina Diamandis                                                   |\n| Brynmawr, País de Gales                                            |\n| Estudante universitária (recém-admitida em Literatura e Música)    |\n| Aspirante a barista – procurando trabalho para pagar a faculdade   |\n|                                                                    |\n| Habilidades:                                                       |\n|                                                                    |\n| Ótimo atendimento ao cliente                                       |\n|                                                                    |\n| Apaixonada por café e música                                       |\n|                                                                    |\n| Rápida, criativa e sempre com uma boa conversa pronta              |\n|                                                                    |\n| Experiência anterior:                                              |\n|                                                                    |\n| Atendente em café local                                            |\n|                                                                    |\n| Tutora de inglês e música para crianças                            |\n|                                                                    |\n| Compositora nas horas vagas                                        |\n|                                                                    |\n ————————————————————————————————————————————————————————————————————")
+		
+	}	
 	funcao escrever_delay(cadeia texto, inteiro delay)
 	{
 		para(inteiro i=0; i < t.numero_caracteres(texto); i++)
@@ -142,5 +146,21 @@ programa
 		escreva(t.obter_caracter(texto, i))
 		u.aguarde(delay)
 	}
-}
+	}
+	funcao carregar(inteiro repete)
+	{
+		para(inteiro i = 0 ; i <= repete ; i++)
+	{
+		escreva("     /   \n ###/### \n#       #\n#       #\n #     # \n  #####  \n ")
+		u.aguarde(500)
+	     limpa()
+		escreva("     /   \n ###/### \n#      ##\n#     #  \n #     # \n  #####  \n ")
+		u.aguarde(500)
+	     limpa()
+		escreva("     /  \n ###/###\n#     ##\n#    #  \n #    # \n  ##### \n ")	
+		u.aguarde(500)
+	     limpa()
+	}
+	}
+	
 }
