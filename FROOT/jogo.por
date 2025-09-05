@@ -189,6 +189,14 @@ programa
 		escrever_delay("[???]: na verdade... meu nome e Marina" , 100)
 		limpa()
 		escreva("[Cliente]: oh meu deus, voce e igualzinha a Shakira!\n[Cliente]: nao nao... voce e a Catherine Zeta!\n[Marina]: na verdade... meu nome e Marina\n")
+		u.aguarde(100)
+		escrever_delay("[Cliente]: oh...\n" , 50)
+		u.aguarde(100)
+		escrever_delay("[Marina]: ...o senhor gostaria de fazer um pedido?\n" , 100)
+		u.aguarde(100)
+		escrever_delay("[Cliente]: ah sim!\n" , 50)
+		u.aguarde(100)
+	
 	}	
 	funcao escrever_delay(cadeia texto, inteiro delay)
 	{
