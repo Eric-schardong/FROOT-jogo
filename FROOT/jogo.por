@@ -4,101 +4,36 @@ programa
 	inclua biblioteca Util --> u
 	inclua biblioteca Texto --> t
 	inteiro volume = 100
-	inteiro froot[] = {m.carregar_som("INTRO.mp3")}
-	cadeia froota
-	inteiro propriedades_froota[3] ={1,0,0}
-	// 0 fase de crescimento
-	// 1 citrico(real)
-	// 2 xp
-	cadeia desenhos[21][1] =
-	{
-		{"  \\V/ "},
-		{"  \\V/ "},
-		{"  ###  "},
-		{" # ### "},
-		{"###   #"},
-		{"#   ###"},
-		{" ##### "},
-		
-		{"       "},
-		{"   \\| "},
-		{" ## ## "},
-		{"# #  ##"},
-		{" # # # "},
-		{"  # #  "},
-		{"   #   "},
-		
-		{"         "},
-		{"      /  "},
-		{" ###/### "},
-		{"#      ##"},
-		{"#     #  "},
-		{" #     # "},
-		{"  #####  "}
-	} 
+	inteiro musica = m.carregar_som("INTRO.mp3")
 	funcao inicio()
 	{
-	     
-		m.reproduzir_som(froot[0], verdadeiro)
-		u.aguarde(2900)
 		menu()
 	}
 	funcao menu()
 	{
 		limpa()
+		trocar_musica("INTRO.mp3")
+		u.aguarde(2900)
 		inteiro input
 		logo(250)
-		escreva("\n            [1] Começar   [2]Opçoes\n")
-		leia(input)
-		escolha(input)
-		{
-			caso 1: historia()
-			pare
-			caso 2: opcoes()
-			pare
-		}
-		
-	}
-	funcao escolher_froota()
-	{
-		inteiro input
-		cadeia frootas[] = {"Abacaxi", "Uva", "Maçã"}
-		limpa()
-		escreva("Escolha sua froota: ")
-		escreva("\n\n")
-		escreva("    \\V/                                \n")	        
-		escreva("    \\V/      \\|         /        /    \n")
-		escreva("    ###     ## ##    ###/###     ###    \n") 
-		escreva("   # ###   # #  ##  #      ##  ##   ##  \n")
-		escreva("  ###   #   # # #   #     #    #     #  \n")
-		escreva("  #   ###    # #     #     #   ##   ##  \n")
-		escreva("   #####      #       #####      ###    \n")
-		escreva("[1]Abacaxi [2]Uva   [3] Maçã  [4] Limão\n")
-		escreva("—————————— ———————— ————————— —————————\n")
-		leia(input)
-		froota = frootas[input - 1]
-		escolha(input)
-		{
-			caso 1:
-			propriedades_froota[1] = 1
-			pare
-			caso 2:
-			propriedades_froota[1] = 0
-			pare
-			caso 3:
-			propriedades_froota[1] = 0
-			pare
-		}
-		limpa()
-		carregar(3)
-		historia()
+		escreva("\n         [1] Começar   [2]Opçoes   \n         [3]Selecionar Capitulo\n")
+    		leia(input)
+    		escolha(input)
+    		{
+    			caso 1: historia(1)
+    			pare
+    			caso 2: opcoes()
+    			pare
+    			caso 3: capitulos()
+    			pare
+        }  
 		
 	}
 	funcao opcoes()
 	{
 		inteiro input
 		limpa()
-		m.definir_volume_reproducao(froot[0], volume)
+		m.definir_volume_reproducao(musica, volume)
 		escreva("[0] Voltar \n\n")
 		escreva("[1] Volume = ", volume)
 		escreva("\n")
@@ -131,46 +66,21 @@ programa
 	limpa()
 	escreva(" ★   .  . #### #####    ###  ###  ###### .     ★  \n    .     ##   ##  ## ##   ##   ##  ## .    .    .\n .     .  #### #####  #    #     #  ##    .   .   \n  .  .    ##   ## ##  ##   ##   ##  ##      ★     \n .     ★  ##   ##  ##   ###  ###    ##   .     .  \n")
 	}
-	funcao historia()
+	funcao historia(inteiro capitulo)
 	{
 		cadeia enter
 		limpa()
+		escolha(capitulo)
+		{
+		caso 1:  
 		escrever_delay("		CAPITULO 1" , 200)
 		u.aguarde(250)
-		limpa()
-		escreva("		CAPITULO 1\n##  ##\n##  ##\n######\n##  ##\n##  ##\n")
-		u.aguarde(250)
-		limpa()
-		escreva("		CAPITULO 1\n##  ##  ## \n##  ## #  #\n###### ####\n##  ## #  #\n##  ## #  #\n")
-		u.aguarde(250)
-		limpa()
-		escreva("		CAPITULO 1\n##  ##  ##  #### \n##  ## #  # ##  #\n###### #### #### \n##  ## #  # ##   \n##  ## #  # ##   \n")
-		u.aguarde(250)
-		limpa()
-		escreva("		CAPITULO 1\n##  ##  ##  ####  #### \n##  ## #  # ##  # ##  #\n###### #### ####  #### \n##  ## #  # ##    ##   \n##  ## #  # ##    ##   \n")
-		u.aguarde(250)
-		limpa()
-		escreva("		CAPITULO 1\n##  ##  ##  ####  ####  #   #\n##  ## #  # ##  # ##  # #   #\n###### #### ####  ####   ####\n##  ## #  # ##    ##       ##\n##  ## #  # ##    ##     ### \n")
-		u.aguarde(3500)
-		limpa()
-		escreva("\n##  ##  ##  ####  ####  #   #\n##  ## #  # ##  # ##  # #   #\n###### #### ####  ####   ####\n##  ## #  # ##    ##       ##\n##  ## #  # ##    ##     ### \n")
-		u.aguarde(100)
-		limpa()
-		escreva("\n##  ## #  # ##  # ##  # #   #\n###### #### ####  ####   ####\n##  ## #  # ##    ##       ##\n##  ## #  # ##    ##     ### \n")
-		u.aguarde(100)
-		limpa()
-		escreva("\n###### #### ####  ####   ####\n##  ## #  # ##    ##       ##\n##  ## #  # ##    ##     ### \n")
-		u.aguarde(100)
-		limpa()
-		escreva("\n##  ## #  # ##    ##       ##\n##  ## #  # ##    ##     ### \n")
-		u.aguarde(100)
-		limpa()
-		escreva("\n##  ## #  # ##    ##     ### \n")
-		u.aguarde(300)
+		escrever_delay("\nANCIENT DREAMS IN A MODERN LAND", 50)
+		u.aguarde(2500)	
 		limpa()
 		
 		escrever_delay("..." , 200)
-		escrever_delay("\n 1 de setembro... querido diario, consegui um emprego e hoje vai ser meu primeiro dia\n e eu to muuuuito animada pro atendimento ao publico\n bom, ainda tenho um tempo antes de ir" , 50)
+		escrever_delay("1 de setembro... querido diario, consegui um emprego e hoje vai ser meu primeiro dia\n e eu to muuuuito animada pro atendimento ao publico\n bom, ainda tenho um tempo antes de ir" , 100)
 		leia(enter)
 		limpa()
 		escrever_delay("[liga a tv]\n nada de interessante... de novo... tanto faz." , 50)
@@ -194,9 +104,19 @@ programa
 		u.aguarde(100)
 		escrever_delay("[Marina]: ...o senhor gostaria de fazer um pedido?\n" , 100)
 		u.aguarde(100)
-		escrever_delay("[Cliente]: ah sim!\n" , 50)
-		u.aguarde(100)
-	
+		escrever_delay("[Cliente]: ah sim! \n" , 50)
+		escrever_delay("[Cliente]: eu gostaria de um \n" , 50)
+		u.aguarde(200)
+		limpa()
+		escrever_delay("*Apos um longo dia de trabalho Marina anda de volta pra casa*\n" , 50)
+		escrever_delay("Isso vai ser muito mas dificil do que pensei...\n", 100)
+		escrever_delay("*Marina deita sua cabeca no travesseiro e lentamente fecha os olhos...*", 100)
+		u.aguarde(300)
+		trocar_musica("ADIAML.mp3")
+		u.aguarde(2000)
+		pare
+		}
+		
 	}	
 	funcao escrever_delay(cadeia texto, inteiro delay)
 	{
@@ -222,5 +142,41 @@ programa
 	     limpa()
 	}
 	}
-	
+	funcao trocar_musica(cadeia endereco)
+	{
+		m.liberar_som(musica)
+		musica = m.carregar_som(endereco)
+		m.definir_volume_reproducao(musica, volume)
+		m.reproduzir_som(musica, verdadeiro)
+	}
+	funcao capitulos()
+	{
+		trocar_musica("DF.mp3")
+		inteiro input
+		limpa()
+		escreva("Voltar: 0\n")
+		escreva("________________________________________ _____________________________________\n")
+		escreva("|                                      | |                                   |\n")
+		escreva("| CAPITULO 1:                          | | CAPITULO 2:                       |\n")
+		escreva("| ANCIENT DREAMS IN A MODERN LAND      | | SAVAGES                           |\n")
+		escreva("| voce nao esta aqui para se comformar | | ??????                            |\n")
+		escreva("———————————————————————————————————————— —————————————————————————————————————\n")
+
+		escreva("________________________________________ _____________________________________\n")
+		escreva("|                                      | |                                   |\n")
+		escreva("| CAPITULO 3:                          | | CAPITULO 4:                       |\n")
+		escreva("| PURGE THE POISON                     | | FINAL BOSS                        |\n")
+		escreva("| as bruxas de Hollywood               | | agora conheco o jogo              |\n")
+		escreva("———————————————————————————————————————— —————————————————————————————————————\n")
+
+		leia(input)
+		se(input > 0)
+		{
+		historia(input)
+		}
+		senao
+		{
+			menu()
+		}
+	}
 }
