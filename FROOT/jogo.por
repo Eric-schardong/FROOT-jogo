@@ -69,6 +69,7 @@ programa
 	funcao historia(inteiro capitulo)
 	{
 		cadeia enter
+		inteiro input
 		limpa()
 		escolha(capitulo)
 		{
@@ -83,7 +84,33 @@ programa
 		escrever_delay("1 de setembro... querido diario, consegui um emprego e hoje vai ser meu primeiro dia\n e eu to muuuuito animada pro atendimento ao publico\n bom, ainda tenho um tempo antes de ir" , 100)
 		leia(enter)
 		limpa()
-		escrever_delay("[liga a tv]\n nada de interessante... de novo... tanto faz." , 50)
+		escrever_delay("COMO GOSTARIA DE PASSAR O TEMPO?\n" , 50)
+		escreva("[1] Assistir tv [2] Ler\n")
+		leia(input)
+		limpa()
+		se(input == 1)
+		{
+		escreva("[1]She-ra TV [2]Entrevista com Anja Rubik \n")
+		leia(input)
+		limpa()
+		escolha(input)
+		{
+			caso 1:
+
+			pare
+
+			caso 2:
+			escrever_delay("[entrevistadora] Estamos hoje com uma pessoa muito especial\n", 75)
+			escrever_delay("[entrevistadora] uma garota polaca na America, alta, bronzeada, linda\n", 75)
+			u.aguarde(100)
+			escrever_delay("[entrevistadora] a modelo Anja Rubik!\n", 75)
+			u.aguarde(250)
+			escrever_delay("[entrevistadora] Conte Anja, Por que você quer ser uma mulher de Hollywood?\n", 75)
+			u.aguarde(250)
+			escrever_delay("[Anja Rubik] Por que eu nao quero acabar vivendo num lugar mediocre\n", 75)
+			pare
+		}
+		}
 		leia(enter)
 		limpa()
 		
