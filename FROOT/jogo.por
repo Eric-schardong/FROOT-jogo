@@ -76,7 +76,7 @@ programa
 		caso 1:  
 		escrever_delay("		CAPITULO 1" , 200)
 		u.aguarde(250)
-		escrever_delay("\nANCIENT DREAMS IN A MODERN LAND", 50)
+		escrever_delay("\n	A ESTRADA DE MOWGLI", 50)
 		u.aguarde(2500)	
 		limpa()
 		
@@ -85,33 +85,22 @@ programa
 		leia(enter)
 		limpa()
 		escrever_delay("COMO GOSTARIA DE PASSAR O TEMPO?\n" , 50)
-		escreva("[1] Assistir tv [2] Ler\n")
-		leia(input)
-		limpa()
-		se(input == 1)
-		{
-		escreva("[1]She-ra TV [2]Entrevista com Anja Rubik \n")
+		escreva("  [1]ver TV  [2]ler um livro")
 		leia(input)
 		limpa()
 		escolha(input)
 		{
 			caso 1:
-
+			escreva("[1]She-ra [2]Entrevista com Anja Rubik \n[3]Noticiario")
+			leia(input)
 			pare
-
 			caso 2:
-			escrever_delay("[entrevistadora] Estamos hoje com uma pessoa muito especial\n", 75)
-			escrever_delay("[entrevistadora] uma garota polaca na America, alta, bronzeada, linda\n", 75)
-			u.aguarde(100)
-			escrever_delay("[entrevistadora] a modelo Anja Rubik!\n", 75)
-			u.aguarde(250)
-			escrever_delay("[entrevistadora] Conte Anja, Por que você quer ser uma mulher de Hollywood?\n", 75)
-			u.aguarde(250)
-			escrever_delay("[Anja Rubik] Por que eu nao quero acabar vivendo num lugar mediocre\n", 75)
+			escrever_delay("*Um livro da estante chama minha atencao\n\"comer o mundo\"", 25)
+			trocar_musica("ETW.mp3")
+			u.aguarde(9000)
+			escrever_delay("eu era o tipo de garota que engolia o mundo", 46)
 			pare
 		}
-		}
-		leia(enter)
 		limpa()
 		
 		escrever_delay("Ta, o trabalho e simples, eu anoto o pedido, faco o pedido, entrego o pedido" , 50)
@@ -123,7 +112,7 @@ programa
 		u.aguarde(100)
 		escrever_delay("[Cliente]: nao nao... voce e a Catherine Zeta!\n" , 50)
 		u.aguarde(200)
-		escrever_delay("[???]: na verdade... meu nome e Marina" , 100)
+		escrever_delay("[??????]: na verdade... meu nome e Marina" , 100)
 		limpa()
 		escreva("[Cliente]: oh meu deus, voce e igualzinha a Shakira!\n[Cliente]: nao nao... voce e a Catherine Zeta!\n[Marina]: na verdade... meu nome e Marina\n")
 		u.aguarde(100)
@@ -132,14 +121,14 @@ programa
 		escrever_delay("[Marina]: ...o senhor gostaria de fazer um pedido?\n" , 100)
 		u.aguarde(100)
 		escrever_delay("[Cliente]: ah sim! \n" , 50)
-		escrever_delay("[Cliente]: eu gostaria de um \n" , 50)
+		minigame(u.sorteia(0,4),u.sorteia(0,5),u.sorteia(0,2), verdadeiro)
 		u.aguarde(200)
 		limpa()
 		escrever_delay("*Apos um longo dia de trabalho Marina anda de volta pra casa*\n" , 50)
 		escrever_delay("Isso vai ser muito mas dificil do que pensei...\n", 100)
 		escrever_delay("*Marina deita sua cabeca no travesseiro e lentamente fecha os olhos...*", 100)
 		u.aguarde(300)
-		trocar_musica("ADIAML.mp3")
+		trocar_musica("MgR.mp3")
 		u.aguarde(2000)
 		pare
 		}
@@ -178,32 +167,163 @@ programa
 	}
 	funcao capitulos()
 	{
-		trocar_musica("DF.mp3")
-		inteiro input
+		trocar_musica("MgR.mp3")
+		cadeia input = " "
+		inteiro capitulo = 1
+		mostrar_level(capitulo)
+		
+		
+		enquanto(input != "1")
+		{
+			leia(input)
+			se(input == "a" e capitulo > 1)
+			{
+				capitulo--
+				mostrar_level(capitulo)
+			}
+			se(input == "b")
+			{
+				capitulo++
+				mostrar_level(capitulo)
+			}
+			se(input == "0")
+			{
+				menu()
+			}
+		}
+		historia(capitulo)
+	}
+	funcao mostrar_level(inteiro level)
+	{
 		limpa()
-		escreva("Voltar: 0\n")
-		escreva("________________________________________ _____________________________________\n")
-		escreva("|                                      | |                                   |\n")
-		escreva("| CAPITULO 1:                          | | CAPITULO 2:                       |\n")
-		escreva("| ANCIENT DREAMS IN A MODERN LAND      | | SAVAGES                           |\n")
-		escreva("| voce nao esta aqui para se comformar | | ??????                            |\n")
-		escreva("———————————————————————————————————————— —————————————————————————————————————\n")
-
-		escreva("________________________________________ _____________________________________\n")
-		escreva("|                                      | |                                   |\n")
-		escreva("| CAPITULO 3:                          | | CAPITULO 4:                       |\n")
-		escreva("| PURGE THE POISON                     | | FINAL BOSS                        |\n")
-		escreva("| as bruxas de Hollywood               | | agora conheco o jogo              |\n")
-		escreva("———————————————————————————————————————— —————————————————————————————————————\n")
-
-		leia(input)
-		se(input > 0)
+		escolha(level)
 		{
-		historia(input)
+			caso 1:
+			trocar_musica("MgR.mp3")
+			escreva("________________________________________\n")
+			escreva("|                                      |\n")
+			escreva("| CAPITULO 1:                          |\n")
+			escreva("| A ESTRADA DE MOWGLI                  |\n")
+			escreva("| a estrada abandonada                 |\n")
+			escreva("————————————————————————————————————————\n")
+
+			pare
+			caso 2:
+			trocar_musica("Sava.mp3")
+			escreva("_____________________________________\n")
+			escreva("|                                   |\n")
+			escreva("| CAPITULO 2:                       |\n")
+			escreva("| SAVAGES                           |\n")
+			escreva("| ??????                            |\n")
+			escreva("—————————————————————————————————————\n")
+			pare
+			
+			caso 3:
+			escreva("________________________________________\n")
+			escreva("|                                      |\n")
+			escreva("| CAPITULO 3:                          |\n")
+			escreva("| PURGE THE POISON                     |\n")
+			escreva("| as bruxas de Hollywood               |\n")
+			escreva("————————————————————————————————————————\n")
+		
+			pare
+			
+			caso 4:
+			escreva("_____________________________________\n")
+			escreva("|                                   |\n")
+			escreva("| CAPITULO 4:                       |\n")
+			escreva("| FINAL BOSS                        |\n")
+			escreva("| agora conheco o jogo              |\n")
+			escreva("—————————————————————————————————————\n")
+			
+			pare
 		}
-		senao
+		escreva("[0] - voltar         [1]selecionar\n")
+		escreva("[a]anterior          [b]proximo")
+	}
+	funcao minigame(inteiro nbase , inteiro nfruta , inteiro nextra, logico tutorial){
+	//nbase = numero da base , nfruta = numero da fruta , nextra = numero do extra
+
+		cadeia enter
+		inteiro acertos = 0 ,salario = 0, rbase,rfruta,rextra
+	// igual nbase,nfruta e nextra mas o r eh para resposta
+
+		cadeia bases[5] = {" agua gasificada"," refrigerante",
+						" leite"," vodka"," rum"}
+						
+		cadeia frutas[6] = {" morango "," abacaxi "," maracuja ",
+						" uva "," laranja "," limao "}
+						
+		cadeia extra[3] = {" gelo "," frutas no copo "," nada"}
+
+		se(tutorial == verdadeiro){
+			escreva("nesse minigame voce recebera um cliente que fara um pedido separado em 3 partes:base,sabor e um extras. Voce deve selecionar os ingredientes pedidos. Quanto mais acertos,mais dinheiro voce ira ganhar ao final. \n") 
+			escreva("ENTER para comecar o jogo. \n")
+			leia(enter)
+			escreva("[Cliente]")
+		}
+		
+		
+		escreva(" gostaria de um drink com a base de",bases[nbase],".sabor",frutas[nfruta],".e mais",extra[nextra],"\n")
+		escreva("aperte ENTER para preparar o pedido")
+		leia(enter)
+          limpa()
+          
+		escreva("______________________________________ \n")
+		escreva(" escolha a base pedida pelo cliente: \n")
+		escreva("0-agua gasificada      1-refrigerante \n")
+		escreva("2-leite                 3-vodka \n")
+  		escreva("4-rum \n")
+		escreva("______________________________________ \n")
+		leia(rbase) 
+		se(rbase == nbase) {
+			acertos++ 
+			salario = salario + 5     
+		}
+		limpa()
+		escreva("______________________________________ \n")
+		escreva(" escolha o sabor pedido pelo cliente: \n")
+		escreva("0-morango       1-abacaxi \n")
+		escreva("2-maracuja      3-uva \n")
+  		escreva("4-laranja       5-limao\n")
+		escreva("______________________________________ \n")
+		leia(rfruta) 
+		se(rfruta == nfruta) {
+			acertos++  
+			salario = salario + 5     
+		}
+	   limpa()
+
+		escreva("______________________________________ \n")
+		escreva(" escolha o extra pedido pelo cliente: \n")
+		escreva("0-gelo      1-frutas no copo \n")
+		escreva("2-nada                 \n")
+		escreva("______________________________________ \n")
+		leia(rextra) 
+		se(rextra == nextra) {
+			acertos++ 
+			salario = salario + 5 
+			}     
+		limpa()
+
+		escreva("-------------------------------------------------------- \n")
+		escreva("voce acertou ",acertos,"/3 partes do drink. \n")
+		escreva("voce ganhou ",salario," reais \n")
+
+		escolha(acertos)
 		{
-			menu()
+			caso 3:
+			escreva("parabens! o drink esta perfeito!")
+			pare
+			caso 2:
+			escreva("nao foi tao ruim desta vez!")
+			pare
+			caso 1:
+			escreva("hmmm..poderia ter sido melhor..")
+			pare
 		}
+		escreva("aperte ENTER para continuar")
+		leia(enter)
+		limpa()
 	}
 }
