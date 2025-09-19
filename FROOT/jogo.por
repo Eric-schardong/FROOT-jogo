@@ -73,96 +73,135 @@ programa
 		limpa()
 		escolha(capitulo)
 		{
-		caso 1:  
-		escrever_delay("		CAPITULO 1" , 200)
-		u.aguarde(250)
-		escrever_delay("\n	A ESTRADA DE MOWGLI", 50)
-		u.aguarde(2500)	
-		limpa()
-		
-		escrever_delay("..." , 200)
-		escrever_delay("1 de setembro... querido diario, consegui um emprego e hoje vai ser meu primeiro dia\n e eu to muuuuito animada pro atendimento ao publico\n bom, ainda tenho um tempo antes de ir" , 100)
-		leia(enter)
-		limpa()
-		escrever_delay("COMO GOSTARIA DE PASSAR O TEMPO?\n" , 50)
-		escreva("  [1]ver TV  [2]ler um livro")
-		leia(input)
-		limpa()
-		escolha(input)
-		{
-			caso 1:
-			escreva("[1]She-ra [2]Entrevista com Anja Rubik \n[3]Noticiario")
-			leia(input)
-			pare
-			caso 2:
-			escrever_delay("*Um livro da estante chama minha atencao\n\"comer o mundo\"", 25)
-			trocar_musica("ETW.mp3")
-			u.aguarde(9000)
-			escrever_delay("eu era o tipo de garota que engolia o mundo", 46)
-			pare
-		}
-		limpa()
-		
-		escrever_delay("Ta, o trabalho e simples, eu anoto o pedido, faco o pedido, entrego o pedido" , 50)
-		escreva("\n'Enter' para prosseguir")
-		leia(enter)
-		limpa()
-		
-		escrever_delay("[Cliente]: oh meu deus, voce e igualzinha a Shakira!\n" , 50)
-		u.aguarde(100)
-		escrever_delay("[Cliente]: nao nao... voce e a Catherine Zeta!\n" , 50)
-		u.aguarde(200)
-		escrever_delay("[??????]: na verdade... meu nome e Marina" , 100)
-		limpa()
-		escreva("[Cliente]: oh meu deus, voce e igualzinha a Shakira!\n[Cliente]: nao nao... voce e a Catherine Zeta!\n[Marina]: na verdade... meu nome e Marina\n")
-		u.aguarde(100)
-		escrever_delay("[Cliente]: oh...\n" , 50)
-		u.aguarde(100)
-		escrever_delay("[Marina]: ...o senhor gostaria de fazer um pedido?\n" , 100)
-		u.aguarde(100)
-		escrever_delay("[Cliente]: ah sim! \n" , 50)
-		minigame(u.sorteia(0,4),u.sorteia(0,5),u.sorteia(0,2), verdadeiro)
-		u.aguarde(200)
-		limpa()
-		escrever_delay("*Apos um longo dia de trabalho Marina anda de volta pra casa*\n" , 50)
-		escrever_delay("Isso vai ser muito mas dificil do que pensei...\n", 100)
-		escrever_delay("*Marina deita sua cabeca no travesseiro e lentamente fecha os olhos...*", 100)
-		u.aguarde(300)
-		trocar_musica("MgR.mp3")
-		limpa()
-		escrever_delay("...\n", 25)
-		u.aguarde(300)
-		escrever_delay("*Marina abre os olhos e se encontra em uma floresta*,\n", 50)
-		escrever_delay("*Ao olhar ao redor marina encontra uma placa apontada para uma estrada escura e um papel no chao*\n", 50)
-		escreva("'ENTER' para contiuar")
-		leia(enter)
-		
-		
-		enquanto(input != 3)
-		{
-		leia(input)
-		escreva("[1]Ver placa		[2]Ver papel\n[3]seguir pela estrada")
-			escolha(input)
-			{
-				caso 1: 
+			caso 1:  
+				escrever_delay("		CAPITULO 1" , 200)
+				u.aguarde(250)
+				escrever_delay("\n	A ESTRADA DE MOWGLI", 50)
+				u.aguarde(2500)	
 				limpa()
-				escrever_delay("A placa aponta para uma estrada escura no meio das arvores\n\"o caminho abandonado\"",50)
+				
+				escrever_delay("..." , 200)
+				escrever_delay("1 de setembro... querido diario, consegui um emprego e hoje vai ser meu primeiro dia\n e eu to muuuuito animada pro atendimento ao publico\n bom, ainda tenho um tempo antes de ir" , 100)
+				leia(enter)
+				limpa()
+				escrever_delay("COMO GOSTARIA DE PASSAR O TEMPO?\n" , 50)
+				escreva("  [1]ver TV  [2]ler um livro")
+				leia(input)
+				limpa()
+				escolha(input)
+				{
+					caso 1:
+					escreva("[1]She-ra [2]Entrevista com Anja Rubik \n[3]Noticiario")
+					leia(input)
+					pare
+					caso 2:
+					escrever_delay("*Um livro da estante chama minha atencao\n\"comer o mundo\"", 25)
+					trocar_musica("ETW.mp3")
+					u.aguarde(9000)
+					escrever_delay("eu era o tipo de garota que engolia o mundo", 46)
+					pare
+				}
+				limpa()
+				
+				escrever_delay("Ta, o trabalho e simples, eu anoto o pedido, faco o pedido, entrego o pedido" , 50)
+				escreva("\n'Enter' para prosseguir")
+				leia(enter)
+				limpa()
+				
+				escrever_delay("[Cliente]: oh meu deus, voce e igualzinha a Shakira!\n" , 50)
+				u.aguarde(100)
+				escrever_delay("[Cliente]: nao nao... voce e a Catherine Zeta!\n" , 50)
+				u.aguarde(200)
+				escrever_delay("[??????]: na verdade... meu nome e Marina" , 100)
+				limpa()
+				escreva("[Cliente]: oh meu deus, voce e igualzinha a Shakira!\n[Cliente]: nao nao... voce e a Catherine Zeta!\n[Marina]: na verdade... meu nome e Marina\n")
+				u.aguarde(100)
+				escrever_delay("[Cliente]: oh...\n" , 50)
+				u.aguarde(100)
+				escrever_delay("[Marina]: ...o senhor gostaria de fazer um pedido?\n" , 100)
+				u.aguarde(100)
+				escrever_delay("[Cliente]: ah sim! \n" , 50)
+				minigame(u.sorteia(0,4),u.sorteia(0,5),u.sorteia(0,2), verdadeiro)
+				u.aguarde(200)
+				limpa()
+				escrever_delay("*Apos um longo dia de trabalho Marina anda de volta pra casa*\n" , 50)
+				escrever_delay("Isso vai ser muito mas dificil do que pensei...\n", 100)
+				escrever_delay("*Marina deita sua cabeca no travesseiro e lentamente fecha os olhos...*", 100)
+				u.aguarde(300)
+				trocar_musica("MgR.mp3")
+				limpa()
+				escrever_delay("...\n", 25)
+				u.aguarde(300)
+				escrever_delay("*Marina abre os olhos e se encontra em uma floresta*,\n", 50)
+				escrever_delay("*Ao olhar ao redor marina encontra uma placa apontada para uma estrada escura e um papel no chao*\n", 50)
 				escreva("'ENTER' para contiuar")
 				leia(enter)
+				
+				
+				enquanto(input != 3)
+				{
+				escreva("[1]Ver placa		[2]Ver papel\n		[3]seguir pela estrada")
+				leia(input)
+					escolha(input)
+					{
+						caso 1: 
+						limpa()
+						escrever_delay("A placa aponta para uma estrada escura no meio das arvores\n\"o caminho abandonado\"",50)
+						escreva("'ENTER' para contiuar")
+						leia(enter)
+						pare
+						
+						caso 2: 
+						limpa()
+						escrever_delay("o papel parecia uma pagina arrancada de um caderno, o texto parecia ter sido escrito com pressa\n\"querido diario \nfaz tempo que corro nessa floresta e nao saio daqui\nacho que as colheres estao chegando mais perto\"",50)
+						escreva("'ENTER' para contiuar")
+						leia(enter)
+						pare
+					}
+				}
+				limpa()
+				escrever_delay("Marina lentamente anda pela estrada\n", 50)
+				escrever_delay("A floresta era escura e o caminho nao parecia ter fim\n", 50)
+				escrever_delay("Em algumas arvores tinha aqueles relogios cuckoo pendurados\n", 50)
+				escreva("\n'ENTER' para contiuar")
+				leia(enter)
+				limpa()
+				escrever_delay("Marina encontra mais um papel, era claramente do mesmo caderno que o anterior e tambem parecia ter sido escrito com pressa\n", 50)
+				escrever_delay("\"Me disseram que eu devia seguir pelo caminho abandonado\n", 50)
+				escrever_delay("tem um garfo na estrada, eu nao sei quem quero ser.\"\"\n", 50)
+				escreva("'ENTER' para contiuar")
+				leia(enter)
+				limpa()
+				escrever_delay("[Marina] Esses bilhetes nao tem sentido algum... colheres?... garfo?...\n", 50)
+				escreva("'ENTER' para contiuar")
+				leia(enter)
+				limpa()
+				escrever_delay("Marina decide continaur a andar pela estrada\n", 50)
+				escrever_delay("[Marina] Ah!\n", 50)
+				escrever_delay("Dentro de um unico relogio cuckoo funcionando cai outro papel\n", 50)
+				escreva("'ENTER' para contiuar")
+				leia(enter)
+				limpa()
+				escrever_delay("\"Voce ouve tudo e diz sim, sera que ganhara assim?\n", 50)
+				escrever_delay("Acha mesmo que voce eh bom o suficiente pra dar amor e ser amada?\"\n", 50)
+				escreva("'ENTER' para contiuar")
+				leia(enter)
+				limpa()
+				escrever_delay("[Marina] ...O que?... esses bilhetes fazem cada vez menos sentido... nao parecem se encaixar entre si...\n", 50)
+				escreva("'ENTER' para contiuar")
+				leia(enter)
+				limpa()
+				escrever_delay("Enquanto Marina anda pela estrada ela escuta um barulho distante atras dela, como metal batendo no chao\n", 50)
+				escrever_delay("Ao olhar para traz na distancia algo refletia... eram colheres...\n", 50)
+				escrever_delay("10  colheres de prata que pareciam estar indo em direcao a Marina\n", 50)
+				escrever_delay("Marina corre o mais rapido que pode, mas suas pernas estavam estranhas estavam bambas e ela sentia como se suas pernas fossem feitas de papel\n", 50)
+				
 				pare
 				
-				caso 2: 
-				limpa()
-				escrever_delay("o papel parecia uma pagina arrancada de um caderno, o texto parecia um diario mas escrito com pressa\n\"querido diario \nfaz tempo que corro nessa floresta e nao saio daqui\nacho que as colheres estao chegando mais perto\"",50)
-				escreva("'ENTER' para contiuar")
-				leia(enter)
+				caso 2:
+				
 				pare
-			}
 		}
-		
-		pare
-		}
-		
 	}	
 	funcao escrever_delay(cadeia texto, inteiro delay)
 	{
