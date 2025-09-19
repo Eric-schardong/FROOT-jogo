@@ -133,21 +133,32 @@ programa
 		escrever_delay("...\n", 25)
 		u.aguarde(300)
 		escrever_delay("*Marina abre os olhos e se encontra em uma floresta*,\n", 50)
-		escrever_delay("*Ao olhar ao redor marina encontra uma placa apontando para uma estrada escura e medonha \"a estrada abandonada\"*\n", 50)
-		escrever_delay("[Marina] estrada abandonada? que lugar e esse?\n", 50)
-		escrever_delay("*ao olhar para baixo Marina ve um papel, um tipo de aviso*\n", 50)
-		escrever_delay("[Marina] \"Os talheres vao continuar me perseguindo\"\n", 50)
-		escrever_delay("[Marina] isso nao faz sentido algum\n", 50)
-		escrever_delay("*Marina entao percebe uma luz sendo refletida de longe...*\n", 50)
-		escrever_delay("*A estranha luz se aproxima e agora era clara a imagem*\n", 50)
-		escrever_delay("*10 colheres de prata, e pareciam estar se aproximando*\n", 50)
-		escrever_delay("*assustada, Marina nao tem muito tempo para pensar e sai correndo entrando na estrada abandonada*\n", 50)
-		escrever_delay("*Marina tenta correr mas sente dificuldade, suas pernas estavam bambas, como se fossem feitas de papel*\n", 50)
-		escrever_delay("*A floresta estava muito escura, mas uma luz se destaca, um reflexo...*\n", 50)
-		escrever_delay("*havia um garfo na estrada, Marina se sentiu paralizada*\n", 50)
-		escrever_delay("*Era como se nao conseguisse resistir, fazia tudo que ele mandava*\n", 50)
-		escrever_delay("[Garfo] quem...\n", 50)
+		escrever_delay("*Ao olhar ao redor marina encontra uma placa apontada para uma estrada escura e um papel no chao*\n", 50)
+		escreva("'ENTER' para contiuar")
+		leia(enter)
 		
+		
+		enquanto(input != 3)
+		{
+		leia(input)
+		escreva("[1]Ver placa		[2]Ver papel\n[3]seguir pela estrada")
+			escolha(input)
+			{
+				caso 1: 
+				limpa()
+				escrever_delay("A placa aponta para uma estrada escura no meio das arvores\n\"o caminho abandonado\"",50)
+				escreva("'ENTER' para contiuar")
+				leia(enter)
+				pare
+				
+				caso 2: 
+				limpa()
+				escrever_delay("o papel parecia uma pagina arrancada de um caderno, o texto parecia um diario mas escrito com pressa\n\"querido diario \nfaz tempo que corro nessa floresta e nao saio daqui\nacho que as colheres estao chegando mais perto\"",50)
+				escreva("'ENTER' para contiuar")
+				leia(enter)
+				pare
+			}
+		}
 		
 		pare
 		}
