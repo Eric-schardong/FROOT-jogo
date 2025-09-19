@@ -129,7 +129,26 @@ programa
 		escrever_delay("*Marina deita sua cabeca no travesseiro e lentamente fecha os olhos...*", 100)
 		u.aguarde(300)
 		trocar_musica("MgR.mp3")
-		u.aguarde(2000)
+		limpa()
+		escrever_delay("...\n", 25)
+		u.aguarde(300)
+		escrever_delay("*Marina abre os olhos e se encontra em uma floresta*,\n", 50)
+		escrever_delay("*Ao olhar ao redor marina encontra uma placa apontando para uma estrada escura e medonha \"a estrada abandonada\"*\n", 50)
+		escrever_delay("[Marina] estrada abandonada? que lugar e esse?\n", 50)
+		escrever_delay("*ao olhar para baixo Marina ve um papel, um tipo de aviso*\n", 50)
+		escrever_delay("[Marina] \"Os talheres vao continuar me perseguindo\"\n", 50)
+		escrever_delay("[Marina] isso nao faz sentido algum\n", 50)
+		escrever_delay("*Marina entao percebe uma luz sendo refletida de longe...*\n", 50)
+		escrever_delay("*A estranha luz se aproxima e agora era clara a imagem*\n", 50)
+		escrever_delay("*10 colheres de prata, e pareciam estar se aproximando*\n", 50)
+		escrever_delay("*assustada, Marina nao tem muito tempo para pensar e sai correndo entrando na estrada abandonada*\n", 50)
+		escrever_delay("*Marina tenta correr mas sente dificuldade, suas pernas estavam bambas, como se fossem feitas de papel*\n", 50)
+		escrever_delay("*A floresta estava muito escura, mas uma luz se destaca, um reflexo...*\n", 50)
+		escrever_delay("*havia um garfo na estrada, Marina se sentiu paralizada*\n", 50)
+		escrever_delay("*Era como se nao conseguisse resistir, fazia tudo que ele mandava*\n", 50)
+		escrever_delay("[Garfo] quem...\n", 50)
+		
+		
 		pare
 		}
 		
@@ -213,18 +232,18 @@ programa
 			escreva("_____________________________________\n")
 			escreva("|                                   |\n")
 			escreva("| CAPITULO 2:                       |\n")
-			escreva("| SAVAGES                           |\n")
-			escreva("| ??????                            |\n")
+			escreva("| SELVAGENS                         |\n")
+			escreva("| medo do humano                    |\n")
 			escreva("—————————————————————————————————————\n")
 			pare
 			
 			caso 3:
-			escreva("________________________________________\n")
-			escreva("|                                      |\n")
-			escreva("| CAPITULO 3:                          |\n")
-			escreva("| PURGE THE POISON                     |\n")
-			escreva("| as bruxas de Hollywood               |\n")
-			escreva("————————————————————————————————————————\n")
+			escreva("_______________________________________\n")
+			escreva("|                                     |\n")
+			escreva("| CAPITULO 3:                         |\n")
+			escreva("| INDISPONIVEL                        |\n")
+			escreva("|                                     |\n")
+			escreva("———————————————————————————————————————\n")
 		
 			pare
 			
@@ -232,8 +251,8 @@ programa
 			escreva("_____________________________________\n")
 			escreva("|                                   |\n")
 			escreva("| CAPITULO 4:                       |\n")
-			escreva("| FINAL BOSS                        |\n")
-			escreva("| agora conheco o jogo              |\n")
+			escreva("| INDISPONIVEL                      |\n")
+			escreva("|                                   |\n")
 			escreva("—————————————————————————————————————\n")
 			
 			pare
