@@ -251,12 +251,214 @@ programa
 				}
 				escrever_delay("Marina acorda em seu quarto novamente\n", 50)
 				escrever_delay("Que sonho estranho...\n", 50)
-				pare
 				
 				caso 2:
+			inteiro bonus_vd = 0,bonus_df = 0,bonus_dn = 0,bonus_vlc = 0
+			escrever_delay("		CAPITULO 2" , 200)
+			u.aguarde(250)
+			escrever_delay("\n            	SELVAGENS", 50)
+			u.aguarde(2500)	
+			limpa()
+	
+	
+			escrever_delay("*aos poucos marina abre os olhos novamente* \n *o trabalho aparentemente foi mais cansativo que o previsto*", 50)
+			u.aguarde(100)
+			escrever_delay(" \n*Ela se levanta e vai ate a frente da televisao , onde comeca a passar o jornal local:*", 50)
+			u.aguarde(100)
+			escrever_delay(" \n ...  \n*Marina comeca a ver a noticia que esta passando,e o que ela ve eh pior do que esperava..*",50)
+				u.aguarde(100)
+				leia(enter)
+				limpa()
+	
+			escrever_delay("\n [jornalista]: \"boa noite,ontem a noite recebemos uma denuncia proxima do centro da cidade\"", 50)
+			u.aguarde(100)
+			escrever_delay("\n [jornalista]: \"por volta da meia noite,uma garota foi encontrada jogada na rua com varios hematomas\"", 50)
+			u.aguarde(150)
+			escrever_delay("\n [jornalista]: \"conversamos com algumas destemunhas e elas dizeram que ela vinha sofrendo diversos ataques\"", 50)
+			u.aguarde(200)
+			escrever_delay("\n [jornalista]: \"a maioria vindo de sua propria casa e familiares...\"", 50)
+			u.aguarde(100)
+			leia(enter)
+			limpa()
+	
+			escrever_delay(" \n*o jornalista comeca a contar e detalhar todas as coisas que aconteciam com aquela garota.*", 50)
+			u.aguarde(100)
+			escrever_delay("\n*para marina,os seres humanos sempre foram mals de alguma forma..seres selvagens disfarçados.*", 50)
+			u.aguarde(300)
+			escrever_delay("\n*mas vendo isso..com uma garotinha inocente e ainda no local onde era pra ser um local seguro..*", 50)
+			u.aguarde(100)
+	
+			escreva("\n VOCE QUER CONTINUAR ASSISTINDO? \n [1] sim    [2]nao")
+			leia(input)
+			limpa()
+	
+			escolha(input)
+			{
+				caso 1:
+	
+				escrever_delay("\n*a cada segundo que passa,e mais detalhes sao dados,a crenca de marina de quao selvagens os humanos sao so almenta*", 50)
+			u.aguarde(200)
+			escrever_delay("\n*marina comeca a sentir um leve enjoo e uma dor de cabeca vendo e pensando em tudo que a garota passou.*", 50)
+			u.aguarde(100)
+			escrever_delay("\n*ela acaba nao indo ao trabalho hoje..seu unico objetivo e se deitar novamente e tentar dormir.*", 50)
+			u.aguarde(100)
+			leia(enter)
+			limpa()
+			pare
+	
+			caso 2:
+	
+			
+			
+			escrever_delay("\n*marina rapidamente desliga a tv,tentando tirar tudo aquilo de sua cabeca.Ela se levante e se arruma para o trabalho.*", 50)
+			u.aguarde(200)
+			escrever_delay("\n*enquato anda ate seu trabalho,ela fica constantemente olhando seu arredor..aquelas cenas realmente se fixaram em sua cabeca..*", 50)
+			u.aguarde(100)
+			escrever_delay("\n*e se tiver alguem assim por perto??? e se virem atras de mim??? eh tudo que passou em sua cabeca o dia inteiro.*", 50)
+			u.aguarde(100)
+			escrever_delay("\n*o dia de trabalho passa como um borrao,ela faz o que deve ser feito o mais rapido possivel so pensando em chegar em casa.*", 50)
+			u.aguarde(100)
+			escrever_delay("\n*o caminho pra casa eh tao paranoico quanto a ida,ate que marina chega em sua casa e se tranca,indo direto pra cama.*", 50)
+			u.aguarde(100)
+			leia(enter)
+			limpa()
+			pare
+			}
+	
+			escrever_delay("\n*Marina deita sua cabeca no travesseiro e lentamente fecha os olhos...*", 100)
+			u.aguarde(300)
+			leia(enter)
+			limpa()
+	
+			escrever_delay("\n*marina lentemente acorda novamente...*", 100)
+			u.aguarde(100)
+			escrever_delay("\n*mas ela nao esta mais em casa...*", 50)
+			u.aguarde(100)
+			escrever_delay("\n*ela acorda em um tipo de floresta escura,onde aos fundos se ouvem grunidos e barrulhos que espreitam aquela area..*", 50)
+			u.aguarde(100)
+			escrever_delay("\n*marina,mesmo que tremendo um pouco se levanta*", 50)
+			u.aguarde(100)
+			leia(enter)
+	
+			escrever_delay("\n*a primeira coisa que marina ve em sua frente eh uma divisao entre dois caminhos...*", 50)
+			u.aguarde(100)
+			escrever_delay("\n\nQUAL CAMINHO VOCE QUER SEGUIR? \n   [1] esquerda     [2]direita ", 50)
+			leia(input)
+			u.aguarde(100)
+			limpa()
+	
+			escolha(input)
+			{
+				caso 1:
+				escrever_delay("\n*ela segue pela sua esquerda,passando pelas arvores da densa floresta...*", 50)
+			u.aguarde(100)
+				escrever_delay("\n*ate que ela olha para o chao e se depara com uma lamina enferrujada*", 50)
+			u.aguarde(100)
+				escrever_delay("\n*voce pega ela... \n voce ganha +2 de dano em batalha*", 50)
+			u.aguarde(100)
+			bonus_dn = 2
+		pare
+				caso 2:
+				escrever_delay("\n*marina segue pela sua direita,passando pela floresta*", 50)
+				u.aguarde(100)
+				escrever_delay("\n*ate que ela sem querer tropeca em algo..um par de botas velhas*", 50)
+				u.aguarde(100)
+				escrever_delay("\n*ela acaba percebendo que estava descalca,e sem muita opcao,veste a bota*", 50)
+				u.aguarde(100)
+				escrever_delay("\n*voce ganhou +2 de velocidade em batalha*", 50)
+				u.aguarde(100)
+				bonus_vlc = 2
+	pare			
+			}
+			leia(enter)
+			limpa()
+	
+			escrever_delay("\n*derrepente enquanto marina seguia seu caminho...os sons de dentro da floresta comecam a se intensificar...*", 50)
+				u.aguarde(100)
+				escrever_delay("\n*de dentro da mata sai um animal selvagem,o que parecia ser um tipo de lobo...*", 50)
+				u.aguarde(100)
+				escrever_delay("\n*de qualquer modo...ela se prepara para a batalha...*", 50)
+				u.aguarde(100)
+				leia(enter)
+				limpa()
+	
+				batalha("animal selvagem", 15, 3, 8, 20, bonus_vd, bonus_df, bonus_dn, bonus_vlc)
+				leia(enter)
+				limpa()
+	
+				escrever_delay("\n*ao derrotar o inimigo,marina pega a camisa que ele estava usando e amarra em seu braco...*", 50)
+				u.aguarde(100)
+				escrever_delay("\n*voce ganha +2 de defesa*", 50)
+				u.aguarde(100)
+				bonus_df = 2
+	
+				escrever_delay("\n*quanto mais fundo ela vai ela comeca a ouvir varios sons distorcidos*", 50)
+				u.aguarde(100)
+				escrever_delay("\n*alguns parecidos com grunidos,uivos so que todos abafados por algum tipo de...voz*", 50)
+				u.aguarde(100)
+				escrever_delay("\n*junto com isso..vozes desesperadas implorando por socorro...*", 50)
+				u.aguarde(100)
+				escrever_delay("*implorando para aquilo parar...*", 100)
+				u.aguarde(200)
+				leia(enter)
+				limpa()
+	
+				escrever_delay("\n*marina desesperadamente tampa seus ouvidos,andando cada vez mais rapido para sair dali logo..*", 50)
+				u.aguarde(100)
+				escrever_delay("\n*mas logo a frente dela..ela ve mais uma daquelas criaturas,agora encurralando uma bem menor e indefesa *", 50)
+				u.aguarde(100)
+				escrever_delay("\n*vendo aquilo marina nao se segura e parte pra cima da criatura...*", 50)
+				u.aguarde(100)
+				leia(enter)
+				limpa()
+	
+				batalha("animal selvagem", 20, 4, 10, 20, bonus_vd, bonus_df, bonus_dn, bonus_vlc)
+				leia(enter)
+				limpa()
+	
+				escrever_delay("\n*marina derrota a critatura,que foge para dentro da mata novamente.*", 50)
+				u.aguarde(100)
+				escrever_delay("\n*ela anda ate a criatura antes encurralada,que ainda esta tremendo...*", 50)
+				u.aguarde(100)
+				escrever_delay("\n*marina se agacha,pegando ela em seu colo,tranquilizando a criatura *", 50)
+				u.aguarde(100)
+				leia(enter)
+				limpa()
+	
+				escrever_delay("\n*pela primeira vez,marina senta uma leveza em sua consciencia.*", 50)
+				u.aguarde(100)
+				escrever_delay("\n*as vozes que antes a atormentavam por tras das arvores agora estao ficando mais fracas*", 50)
+				u.aguarde(100)
+				escrever_delay("\n*Marina olha para a criatura em seus bracos,e derrepente comeca a ouvir uma voz...*", 50)
+				u.aguarde(100)
+				leia(enter)
+				limpa()
+	
+				escrever_delay("\n[???]:Um homem constroi bomba...outro corre pela vida de alguem...", 50)
+				u.aguarde(100)
+				escrever_delay("\n[???]:so para que mesmo com todos seus esforco,ver tudo explodir em voce...", 50)
+				u.aguarde(100)
+				escrever_delay("\n[???]:seria isso um instito de sobrevivencia,ou algo que pode ser aprendido?", 50)
+				u.aguarde(100)
+				escrever_delay("\n[???]:voce faz isso por si mesmo,ou por algo muito maior?", 50)
+				u.aguarde(100)
+				leia(enter)
+				limpa()
+	
+				escrever_delay("\n*aquelas palavras de certo modo abrem algo na mente de marina..*", 50)
+				u.aguarde(100)
+				escrever_delay("\n*ela lentamente comeca a ver uma luz no horizonte.*", 50)
+				u.aguarde(100)
+				escrever_delay("\n*ela chega ate la...finalmente saindo daquele lugar...*", 50)
+				u.aguarde(100)
 				
-				pare
-		}
+			caso 3:
+			escrever_delay("      CAPITULO 3\n", 50)
+			escrever_delay("       SEM FOME",60)
+			
+			pare
+			}
+			
 	}	
 	funcao escrever_delay(cadeia texto, inteiro delay)
 	{
@@ -346,7 +548,7 @@ programa
 			escreva("_______________________________________\n")
 			escreva("|                                     |\n")
 			escreva("| CAPITULO 3:                         |\n")
-			escreva("| NAO TENHO MAIS FOME                 |\n")
+			escreva("| SEM FOME                            |\n")
 			escreva("| sentindo-me cada vez mais eu        |\n")
 			escreva("———————————————————————————————————————\n")
 		
@@ -464,4 +666,180 @@ programa
 		g.liberar_imagem(imagem_)
 		g.encerrar_modo_grafico()
 	}
+	funcao batalha(cadeia nome_inimigo, inteiro vida, inteiro dano, inteiro defesa, inteiro velocidade,inteiro bonus_vida,inteiro bonus_defesa,inteiro bonus_dano,inteiro bonus_velocidade)
+    {
+        // Estados de combate
+        logico marina_defendendo = falso, inimigo_defendendo = falso
+        logico marina_esquiva = falso, inimigo_esquiva = falso
+
+        // Atributos fixos e iniciais
+      
+        inteiro vida_inicio = vida
+        inteiro defesa_padrao = defesa
+        inteiro vida_marina = 20 + bonus_vida 
+        inteiro defesa_marina = 10 + bonus_defesa
+        inteiro dano_marina = 6
+        inteiro velocidade_marina = 20 
+        inteiro input
+
+        enquanto (vida > 0 e vida_marina > 0)
+        {
+            // Reinício de turnos
+            defesa_marina = 15
+            marina_defendendo = falso
+            marina_esquiva = falso
+            u.aguarde(1000)
+
+            // Exibe status atual
+            escreva("          MARINA                                  ",nome_inimigo,"\n")
+            escreva(" -----------------------                   --------------------------\n")
+            escreva("  vida = ",vida_marina,"                                 vida = ",vida,"\n")
+            escreva("  dano = 1d",dano_marina,"                                dano = 1d",dano,"\n")
+            escreva("  defesa = ",defesa_marina,"                               defesa = ",defesa,"\n")
+            escreva("  velocidade = ",velocidade_marina,"                           velocidade = ",velocidade,"\n")
+            escreva(" ------------------------                   --------------------------\n")
+
+            // Escolha do jogador
+            escreva("\n[1] ATACAR       [2] DEFENDER   [3] ESQUIVAR   \n")
+            leia(input)
+            limpa()
+
+            // Ação do jogador
+            escolha(input)
+            {
+                caso 1:
+                    inteiro acerto_marina = u.sorteia(1, velocidade_marina) + bonus_velocidade
+                    inteiro marinadano_causado = u.sorteia(1, dano_marina) + bonus_dano
+                    inteiro danoem_inimigodef = marinadano_causado - 2
+
+                    se (acerto_marina >= defesa e inimigo_defendendo)
+                    {
+                        se (danoem_inimigodef < 0)
+                        {
+                            danoem_inimigodef = 0
+                        }
+                        escreva("Você atacou ",nome_inimigo," mas ele estava defendendo! Seu dano foi: ",danoem_inimigodef,"\n")
+                        vida = vida - danoem_inimigodef
+                    }
+                    senao se (acerto_marina >= defesa e inimigo_esquiva)
+                    {
+                        escreva(nome_inimigo," tentou esquivar, mas você foi mais rápido! Seu dano foi: ",marinadano_causado + 3,"\n")
+                        vida = vida - (marinadano_causado + 3)
+                    }
+                    senao se (acerto_marina >= 18)
+                    {
+                        escreva("Você acertou um ataque crítico em ",nome_inimigo,"! Seu dano foi: ",marinadano_causado * 2, "\n")
+                        vida = vida - (marinadano_causado * 2)
+                    }
+                    senao se (acerto_marina >= defesa)
+                    {
+                        escreva("Você acertou ",nome_inimigo,"! Seu dano foi: ",marinadano_causado ,"\n")
+                        vida = vida - marinadano_causado
+                    }
+                    senao
+                    {
+                        escreva("Você tentou atacar ",nome_inimigo," mas errou!\n")
+                    }
+                pare
+
+                caso 2:
+                    marina_defendendo = verdadeiro
+                    escreva("Você está defendendo! Irá receber menos dano até o próximo turno.\n")
+                pare
+
+                caso 3:
+                    marina_esquiva = verdadeiro
+                    defesa_marina = defesa_marina + 3
+                    escreva("Você está tentando esquivar! Terá mais defesa, mas sofrerá dano adicional se for atingida.\n")
+                pare
+
+
+                caso contrario:
+                    escreva("Opção inválida.\n")
+                pare
+            }
+u.aguarde(1000)
+            // Ação do inimigo
+            defesa = defesa_padrao
+            inimigo_defendendo = falso
+            inimigo_esquiva = falso
+
+            inteiro input_inimigo = u.sorteia(1, 3)
+
+            escolha(input_inimigo)
+            {
+                caso 1: // Inimigo ataca
+                    inteiro acerto_inimigo = u.sorteia(1, velocidade)
+                    inteiro inimigo_dano = u.sorteia(1, dano)
+                    inteiro dano_marinadef = inimigo_dano - 2
+
+                    se (acerto_inimigo >= defesa_marina e marina_defendendo)
+                    {
+                        se (dano_marinadef < 0)
+                        {
+                            dano_marinadef = 0
+                        }
+                        escreva(nome_inimigo," te acertou, mas você estava defendendo! Você levou: ",dano_marinadef," de dano\n")
+                        vida_marina = vida_marina - dano_marinadef
+                    }
+                    senao se (acerto_inimigo >= defesa_marina e marina_esquiva)
+                    {
+                        escreva(nome_inimigo," te acertou apesar da esquiva! Você levou dano adicional: ",inimigo_dano + 3,"\n")
+                        vida_marina = vida_marina - (inimigo_dano + 3)
+                    }
+                    senao se (acerto_inimigo == 20)
+                    {
+                        escreva(nome_inimigo," acertou um ataque crítico! Você levou: ",inimigo_dano * 2," de dano!\n")
+                        vida_marina = vida_marina - (inimigo_dano * 2)
+                    }
+                    senao se (acerto_inimigo >= defesa_marina)
+                    {
+                        escreva(nome_inimigo," te acertou! Você levou: ",inimigo_dano," de dano\n")
+                        vida_marina = vida_marina - inimigo_dano
+                    }
+                    senao
+                    {
+                        escreva(nome_inimigo," tentou te atacar, mas errou!\n")
+                    }
+                pare
+
+                caso 2: // Inimigo defende
+                    inimigo_defendendo = verdadeiro
+                    escreva(nome_inimigo," está se defendendo!\n")
+                pare
+
+                caso 3: // Inimigo tenta esquivar
+                    inimigo_esquiva = verdadeiro
+                    defesa = defesa + 3
+                    escreva(nome_inimigo," está tentando esquivar!\n")
+                pare
+            }
+       
+         // Fim da batalha
+        se (vida <= 0)
+        {
+            escreva("\nVocê venceu o inimigo ", nome_inimigo, "!\n")
+        }
+        senao se (vida_marina <= 0)
+        {
+            escreva("\nVocê foi derrotada por ", nome_inimigo, "...\n")
+            escrever_delay("\n TENTAR NOVAMENTE? \n [1] sim    [2] nao", 50)
+            leia(input)
+
+            escolha(input)
+            {
+            	caso 1:
+            	vida_marina = 20
+            	vida = vida_inicio
+           
+            caso 2:
+            menu()
+            }
+        			
+        			
+        }
+
+       
+        }
+    }
 }
