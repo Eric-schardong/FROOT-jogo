@@ -76,6 +76,8 @@ programa
 		escolha(capitulo)
 		{
 			caso 1:  
+			trocar_musica("HK.mp3")
+			carregar(3)
 				escrever_delay("		CAPITULO 1" , 100)
 				u.aguarde(250)
 				escrever_delay("\n    A ESTRADA DE MOWGLI", 50)
@@ -106,6 +108,7 @@ programa
 							escrever_delay("[Entrevistadora] Conte Anja, por que voce gostaria de ser uma mulher de hollywood?\n",50)
 							u.aguarde(50)
 							escrever_delay("[Anja Rubik] Por que eu nao quero acabar tendo uma vida mediocre\n",50)
+							leia(enter)
 							pare
 						}
 					pare
@@ -113,36 +116,60 @@ programa
 					escrever_delay("*Um livro da estante chama minha atencao\n\"comer o mundo\"", 25)
 					trocar_musica("ETW.mp3")
 					u.aguarde(9000)
-					escrever_delay("eu era o tipo de garota que engolia o mundo", 46)
+					escrever_delay("eu era o tipo de garota que engolia o mundo\n", 46)
 					pare
 				}
 				limpa()
-				
-				escrever_delay("Ta, o trabalho e simples, eu anoto o pedido, faco o pedido, entrego o pedido" , 50)
+				escrever_delay("[Marina] Oh, o tempo passou rapido, hora de ir para o trabalho...\n" , 50)
+				leia(enter)
+				escrever_delay("*Marina anda calmamente pois saiu cedo de casa\naproveita o passeio para observar onde passa*\n" , 50)
+				escrever_delay("*Ela ve uma loja de antiguidades com um lindo relogio cuco na vitrine*\n", 50)
+				leia(enter)
+				escrever_delay("*Marina entao chega ao trabalho onde e recebida calorosamente por seu chefe*\n" , 50)
+				escrever_delay("[Chefe] Por que chegou tao tarde?!\n" , 50)
+				escrever_delay("[Marina] Mas eu cheguei na hora certa-\n",50)
+				escrever_delay("[Chefe] Nao quero saber!\n" , 50)
+				escrever_delay("[Chefe] Se apresse e comece a trabalhar.\n" , 50)
+				escrever_delay("[Marina] Sim senhor...\n",50)
 				escreva("\n'Enter' para prosseguir")
 				leia(enter)
 				limpa()
-				
-				escrever_delay("[Cliente]: oh meu deus, voce e igualzinha a Shakira!\n" , 50)
+				escrever_delay("*um cliente entra no estabelecimento e se dirige ao balcao para ser atendido*\n",50)
+				escrever_delay("[Cliente]: oh meu deus! voce e igualzinha a Shakira!\n" , 50)
 				u.aguarde(100)
 				escrever_delay("[Cliente]: nao nao... voce e a Catherine Zeta!\n" , 50)
 				u.aguarde(200)
 				escrever_delay("[??????]: na verdade... meu nome e Marina" , 70)
 				limpa()
-				escreva("[Cliente]: oh meu deus, voce e igualzinha a Shakira!\n[Cliente]: nao nao... voce e a Catherine Zeta!\n[Marina]: na verdade... meu nome e Marina\n")
+				escreva("*um cliente entra no estabelecimento e se dirige ao balcao para ser atendido*\n[Cliente]: oh meu deus, voce e igualzinha a Shakira!\n[Cliente]: nao nao... voce e a Catherine Zeta!\n[Marina]: na verdade... meu nome e Marina\n")
 				u.aguarde(100)
 				escrever_delay("[Cliente]: oh...\n" , 50)
 				u.aguarde(100)
 				escrever_delay("[Marina]: ...o senhor gostaria de fazer um pedido?\n" , 60)
 				u.aguarde(100)
 				escrever_delay("[Cliente]: ah sim! \n" , 50)
-				minigame(u.sorteia(0,4),u.sorteia(0,5),u.sorteia(0,2), verdadeiro)
+				minigame(u.sorteia(0,4),u.sorteia(0,5),u.sorteia(0,2), verdadeiro, falso)
 				u.aguarde(200)
 				limpa()
+				escrever_delay("*Mais um cliente entra*\n",50)
+				escrever_delay("[Cliente]: Boa tarde.\n" , 50)
+				minigame(u.sorteia(0,4),u.sorteia(0,5),u.sorteia(0,2), falso, verdadeiro)
+				escrever_delay("[Marina]: O que?!\n" , 60)
+				escrever_delay("[Marina]: Mas eu fiz tudo certo!\n" , 60)
+				escrever_delay("[Cliente]: Quero falar com o gerente do estabelecimento!\n" , 50)
+				escrever_delay("[Marina]: ...Sim senhora...\n" , 60)
+				leia(enter)
+				escrever_delay("[Chefe] Posso saber qual o problema aqui?\n" , 50)
+				escrever_delay("[Cliente]: Sua funcionaria errou o pedido inteiro!\n" , 50)
+				escrever_delay("[Marina]: Senhor eu fiz tudo cer-\n" , 60)
+				escrever_delay("[Chefe]: Como pode errar algo tao simples?!\n" , 50)
+				escrever_delay("[Chefe]: Isso sera descontado de seu salario e caso aconteca novamente sera despedida!\n" , 50)
+				escrever_delay("[Marina]: Entendo senhor...\n" , 60)
+				leia(enter)
 				escrever_delay("*Apos um longo dia de trabalho Marina anda de volta pra casa*\n" , 50)
-				escrever_delay("Isso vai ser muito mais dificil do que pensei...\n", 70)
-				escrever_delay("*Marina deita sua cabeca no travesseiro e lentamente fecha os olhos...*", 70)
-				u.aguarde(300)
+				escrever_delay("[Marina]:Isso vai ser muito mais dificil do que pensei...\n", 70)
+				escrever_delay("*Marina deita sua cabeca no travesseiro e lentamente fecha os olhos...*", 80)
+				u.aguarde(500)
 				trocar_musica("MgR.mp3")
 				limpa()
 				escrever_delay("...\n", 25)
@@ -253,6 +280,8 @@ programa
 				escrever_delay("Que sonho estranho...\n", 50)
 				
 				caso 2:
+				trocar_musica("HK.mp3")
+				carregar(3)
 			inteiro bonus_vd = 0,bonus_df = 0,bonus_dn = 0,bonus_vlc = 0
 			escrever_delay("		CAPITULO 2" , 200)
 			u.aguarde(250)
@@ -296,7 +325,7 @@ programa
 			{
 				caso 1:
 	
-				escrever_delay("\n*a cada segundo que passa,e mais detalhes sao dados,a crenca de marina de quao selvagens os humanos sao so almenta*", 50)
+			escrever_delay("\n*a cada segundo que passa,e mais detalhes sao dados,a crenca de marina de quao selvagens os humanos sao so almenta*", 50)
 			u.aguarde(200)
 			escrever_delay("\n*marina comeca a sentir um leve enjoo e uma dor de cabeca vendo e pensando em tudo que a garota passou.*", 50)
 			u.aguarde(100)
@@ -453,9 +482,26 @@ programa
 				u.aguarde(100)
 				
 			caso 3:
+			trocar_musica("HK.mp3")
+			carregar(3)
 			escrever_delay("      CAPITULO 3\n", 50)
-			escrever_delay("       SEM FOME",60)
-			
+			escrever_delay("       SEM FOME\n",60)
+			u.aguarde(4000)
+			limpa()
+			escrever_delay("Marina acorda com uma ligacao de seu chefe... mas decido desligar\n",90)
+			escrever_delay("Marina olha para a janela e observa a chuva e um pouco de seu reflexo quase invisivel...\n",90)
+			escrever_delay("Era como se fosse a primeira vez que Marina se sentia como ela mesma...\n",90)
+			u.aguarde(4500)
+			trocar_musica("AnotherRoad.mp3")
+			escrever_delay("[Marina] Pode ser que tenha outra estrada pra mim\n", 70)
+			escrever_delay("[Marina] Ou pode ser que eu tenha errado...\n", 70)
+			escrever_delay("[Marina] Acho que eu nao sou quem eu queria ser\n", 70)
+			escrever_delay("[Marina] Agora meus sonhos se vão\n", 70)
+			escrever_delay("[Marina] Não há pra que se apressar\n", 70)
+			escrever_delay("[Marina] O tempo do meu lado está\n", 70)
+			escrever_delay("[Marina] Não há preucupação\n", 70)
+			escrever_delay("[Marina] Hora de me acalmar\n", 70)
+			u.aguarde(8000)
 			pare
 			}
 			
@@ -473,13 +519,13 @@ programa
 	{
 		para(inteiro i = 0 ; i <= repete ; i++)
 	{
-		escreva("     /   \n ###/### \n#       #\n#       #\n #     # \n  #####  \n ")
+		escreva("     /   \n ###/### \n#       #\n#       #\n #     # \n  #####  \nCARREGANDO")
 		u.aguarde(500)
 	     limpa()
-		escreva("     /   \n ###/### \n#      ##\n#     #  \n #     # \n  #####  \n ")
+		escreva("     /   \n ###/### \n#      ##\n#     #  \n #     # \n  #####  \nCARREGANDO")
 		u.aguarde(500)
 	     limpa()
-		escreva("     /  \n ###/###\n#     ##\n#    #  \n #    # \n  ##### \n ")	
+		escreva("     /  \n ###/###\n#     ##\n#    #  \n #    # \n  ##### \nCARREGANDO")	
 		u.aguarde(500)
 	     limpa()
 	}
@@ -567,7 +613,7 @@ programa
 		escreva("[0] - voltar         [1]selecionar\n")
 		escreva("[a]anterior          [b]proximo")
 	}
-	funcao minigame(inteiro nbase , inteiro nfruta , inteiro nextra, logico tutorial){
+	funcao minigame(inteiro nbase , inteiro nfruta , inteiro nextra, logico tutorial, logico golpe){
 	//nbase = numero da base , nfruta = numero da fruta , nextra = numero do extra
 
 		cadeia enter
@@ -636,19 +682,26 @@ programa
 		escreva("voce acertou ",acertos,"/3 partes do drink. \n")
 		escreva("voce ganhou ",salario," reais \n")
 
+		se(golpe == falso)
+		{
 		escolha(acertos)
 		{
 			caso 3:
-			escreva("parabens! o drink esta perfeito!")
+			escreva("[Cliente] Esta perfeito, muito obrigado!")
 			pare
 			caso 2:
-			escreva("nao foi tao ruim desta vez!")
+			escreva("[Cliente] Poderia ser um pouco melhor...")
 			pare
 			caso 1:
-			escreva("hmmm..poderia ter sido melhor..")
+			escreva("[Cliente] Nao foi isso que eu pedi...")
 			pare
 		}
-		escreva("aperte ENTER para continuar")
+		}
+		senao
+		{
+			escreva("[Cliente] Nao foi isso que eu pedi!")
+		}
+		escreva("\naperte ENTER para continuar")
 		leia(enter)
 		limpa()
 	}
