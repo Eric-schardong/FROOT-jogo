@@ -78,8 +78,8 @@ programa
 			caso 1:  
 			trocar_musica("HK.mp3")
 			carregar(3)
-				escrever_delay("		CAPITULO 1" , 100)
-				u.aguarde(250)
+				escrever_delay("         CAPITULO 1" , 100)
+				u.aguarde(250)           
 				escrever_delay("\n    A ESTRADA DE MOWGLI", 50)
 				u.aguarde(2500)	
 				limpa()
@@ -122,9 +122,11 @@ programa
 				limpa()
 				escrever_delay("[Marina] Oh, o tempo passou rapido, hora de ir para o trabalho...\n" , 50)
 				leia(enter)
+				limpa()
 				escrever_delay("*Marina anda calmamente pois saiu cedo de casa\naproveita o passeio para observar onde passa*\n" , 50)
 				escrever_delay("*Ela ve uma loja de antiguidades com um lindo relogio cuco na vitrine*\n", 50)
 				leia(enter)
+				limpa()
 				escrever_delay("*Marina entao chega ao trabalho onde e recebida calorosamente por seu chefe*\n" , 50)
 				escrever_delay("[Chefe] Por que chegou tao tarde?!\n" , 50)
 				escrever_delay("[Marina] Mas eu cheguei na hora certa-\n",50)
@@ -159,6 +161,7 @@ programa
 				escrever_delay("[Cliente]: Quero falar com o gerente do estabelecimento!\n" , 50)
 				escrever_delay("[Marina]: ...Sim senhora...\n" , 60)
 				leia(enter)
+				limpa()
 				escrever_delay("[Chefe] Posso saber qual o problema aqui?\n" , 50)
 				escrever_delay("[Cliente]: Sua funcionaria errou o pedido inteiro!\n" , 50)
 				escrever_delay("[Marina]: Senhor eu fiz tudo cer-\n" , 60)
@@ -166,6 +169,7 @@ programa
 				escrever_delay("[Chefe]: Isso sera descontado de seu salario e caso aconteca novamente sera despedida!\n" , 50)
 				escrever_delay("[Marina]: Entendo senhor...\n" , 60)
 				leia(enter)
+				limpa()
 				escrever_delay("*Apos um longo dia de trabalho Marina anda de volta pra casa*\n" , 50)
 				escrever_delay("[Marina]:Isso vai ser muito mais dificil do que pensei...\n", 70)
 				escrever_delay("*Marina deita sua cabeca no travesseiro e lentamente fecha os olhos...*", 80)
@@ -188,16 +192,12 @@ programa
 					{
 						caso 1: 
 						limpa()
-						escrever_delay("A placa aponta para uma estrada escura no meio das arvores\n\"o caminho abandonado\"",50)
-						escreva("'ENTER' para contiuar\n")
-						leia(enter)
+						imagem(736, 490, "placa.jpeg")
 						pare
 						
 						caso 2: 
 						limpa()
-						escrever_delay("o papel parecia uma pagina arrancada de um caderno, o texto parecia ter sido escrito com pressa\n\"querido diario \nfaz tempo que corro nessa floresta e nao saio daqui\nacho que as colheres estao chegando mais perto\"",50)
-						escreva("'ENTER' para contiuar\n")
-						leia(enter)
+						imagem(500, 700, "papernote1.png")
 						pare
 					}
 				}
@@ -208,9 +208,8 @@ programa
 				escreva("\n'ENTER' para contiuar")
 				leia(enter)
 				limpa()
-				escrever_delay("Marina encontra mais um papel, era claramente do mesmo caderno que o anterior e tambem parecia ter sido escrito com pressa\n", 50)
-				escrever_delay("\"Me disseram que eu devia seguir pelo caminho abandonado\n", 50)
-				escrever_delay("tem um garfo na estrada, eu nao sei quem quero ser.\"\"\n", 50)
+				escrever_delay("Marina encontra mais um papel semelhante ao anterior.\n", 50)
+				imagem(500, 700, "papernote2.png")
 				escreva("'ENTER' para contiuar\n")
 				leia(enter)
 				limpa()
@@ -219,13 +218,12 @@ programa
 				leia(enter)
 				limpa()
 				escrever_delay("Marina decide continaur a andar pela estrada\n", 50)
-				escrever_delay("[Marina] Ah!\n", 50)
+				escrever_delay("Cuco!\n[Marina] Ah!\n", 50)
 				escrever_delay("Dentro de um unico relogio cuco funcionando cai outro papel\n", 50)
 				escreva("'ENTER' para contiuar\n")
 				leia(enter)
 				limpa()
-				imagem(500, 700, "papel.png")
-				escrever_delay("Acha mesmo que voce eh bom o suficiente pra dar amor e ser amada?\"\n", 50)
+				imagem(500, 700, "papernote3.jpeg")
 				escreva("'ENTER' para contiuar\n")
 				leia(enter)
 				limpa()
@@ -358,7 +356,7 @@ programa
 			u.aguarde(300)
 			leia(enter)
 			limpa()
-	
+			trocar_musica("Sava.mp3")
 			escrever_delay("\n*marina lentemente acorda novamente...*", 100)
 			u.aguarde(100)
 			escrever_delay("\n*mas ela nao esta mais em casa...*", 50)
@@ -553,7 +551,7 @@ programa
 				capitulo--
 				mostrar_level(capitulo)
 			}
-			se(input == "b")
+			se(input == "d")
 			{
 				capitulo++
 				mostrar_level(capitulo)
@@ -591,6 +589,7 @@ programa
 			pare
 			
 			caso 3:
+			trocar_musica("NHAM.mp3")
 			escreva("_______________________________________\n")
 			escreva("|                                     |\n")
 			escreva("| CAPITULO 3:                         |\n")
@@ -611,7 +610,7 @@ programa
 			pare
 		}
 		escreva("[0] - voltar         [1]selecionar\n")
-		escreva("[a]anterior          [b]proximo")
+		escreva("[a]anterior          [d]proximo")
 	}
 	funcao minigame(inteiro nbase , inteiro nfruta , inteiro nextra, logico tutorial, logico golpe){
 	//nbase = numero da base , nfruta = numero da fruta , nextra = numero do extra
@@ -632,11 +631,10 @@ programa
 			escreva("nesse minigame voce recebera um cliente que fara um pedido separado em 3 partes:base,sabor e um extras. Voce deve selecionar os ingredientes pedidos. Quanto mais acertos,mais dinheiro voce ira ganhar ao final. \n") 
 			escreva("ENTER para comecar o jogo. \n")
 			leia(enter)
-			escreva("[Cliente]")
 		}
 		
 		
-		escreva(" gostaria de um drink com a base de",bases[nbase],".sabor",frutas[nfruta],".e mais",extra[nextra],"\n")
+		escreva("[Cliente] gostaria de um drink com a base de ",bases[nbase],". sabor ",frutas[nfruta],". e mais ",extra[nextra],"\n")
 		escreva("aperte ENTER para preparar o pedido")
 		leia(enter)
           limpa()
