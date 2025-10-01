@@ -297,7 +297,7 @@ programa
 				leia(enter)
 				limpa()
 	
-			escrever_delay("\n [jornalista]: \"boa noite,hoje no jornal diamente.\"", 50)
+			escrever_delay("\n [jornalista]: \"boa noite,hoje no jornal diamante.\"", 50)
 			u.aguarde(100)
 			escrever_delay("\n [jornalista]: \"falaremos sobre denuncias recebidas por toda a cidade\"", 50)
 			u.aguarde(150)
