@@ -518,7 +518,7 @@ programa
 			escrever_delay("[Marina] Não há pra que se apressar\n", 70)
 			escrever_delay("[Marina] O tempo do meu lado está\n", 70)
 			escrever_delay("[Marina] Não há preucupação\n", 70)
-			escrever_delay("[Marina] Hora de me acalmar\n", 70)
+			escrever_delay("[Marina] Hora de relaxar\n", 70)
 			u.aguarde(8000)
 			para(inteiro i = 0; i <= 80; i++)
 			{
