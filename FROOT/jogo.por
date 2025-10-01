@@ -277,7 +277,7 @@ programa
 				escrever_delay("Marina acorda em seu quarto novamente\n", 50)
 				escrever_delay("Que sonho estranho...\n", 50)
 				
-				caso 2:
+			caso 2:
 				trocar_musica("HK.mp3")
 				carregar(3)
 			inteiro bonus_vd = 0,bonus_df = 0,bonus_dn = 0,bonus_vlc = 0
@@ -292,27 +292,27 @@ programa
 			u.aguarde(100)
 			escrever_delay(" \n*Ela se levanta e vai ate a frente da televisao , onde comeca a passar o jornal local:*", 50)
 			u.aguarde(100)
-			escrever_delay(" \n ...  \n*Marina comeca a ver a noticia que esta passando,e o que ela ve eh pior do que esperava..*",50)
+			escrever_delay(" \n ...  \n*Marina comeca a ver a noticia que esta passando..*",50)
 				u.aguarde(100)
 				leia(enter)
 				limpa()
 	
-			escrever_delay("\n [jornalista]: \"boa noite,ontem a noite recebemos uma denuncia proxima do centro da cidade\"", 50)
+			escrever_delay("\n [jornalista]: \"boa noite,hoje no jornal diamente.\"", 50)
 			u.aguarde(100)
-			escrever_delay("\n [jornalista]: \"por volta da meia noite,uma garota foi encontrada jogada na rua com varios hematomas\"", 50)
+			escrever_delay("\n [jornalista]: \"falaremos sobre denuncias recebidas por toda a cidade\"", 50)
 			u.aguarde(150)
-			escrever_delay("\n [jornalista]: \"conversamos com algumas destemunhas e elas dizeram que ela vinha sofrendo diversos ataques\"", 50)
+			escrever_delay("\n [jornalista]: \"nossas altoridades foram ate os locais \"", 50)
 			u.aguarde(200)
-			escrever_delay("\n [jornalista]: \"a maioria vindo de sua propria casa e familiares...\"", 50)
+			escrever_delay("\n [jornalista]: \"falamos com algumas das vitimas e destemunhas...\"", 50)
 			u.aguarde(100)
 			leia(enter)
 			limpa()
 	
-			escrever_delay(" \n*o jornalista comeca a contar e detalhar todas as coisas que aconteciam com aquela garota.*", 50)
+			escrever_delay(" \n*o jornalista comeca a contar e detalhar todas as coisas que aconteceram.*", 50)
 			u.aguarde(100)
 			escrever_delay("\n*para marina,os seres humanos sempre foram mals de alguma forma..seres selvagens disfarçados.*", 50)
 			u.aguarde(300)
-			escrever_delay("\n*mas vendo isso..com uma garotinha inocente e ainda no local onde era pra ser um local seguro..*", 50)
+			escrever_delay("\n*mas vendo isso..*", 50)
 			u.aguarde(100)
 	
 			escreva("\n VOCE QUER CONTINUAR ASSISTINDO? \n [1] sim    [2]nao")
@@ -325,10 +325,11 @@ programa
 	
 			escrever_delay("\n*a cada segundo que passa,e mais detalhes sao dados,a crenca de marina de quao selvagens os humanos sao so almenta*", 50)
 			u.aguarde(200)
-			escrever_delay("\n*marina comeca a sentir um leve enjoo e uma dor de cabeca vendo e pensando em tudo que a garota passou.*", 50)
+			escrever_delay("\n*marina comeca a se sentir cada vez pior com o passar do tempo.*", 50)
 			u.aguarde(100)
-			escrever_delay("\n*ela acaba nao indo ao trabalho hoje..seu unico objetivo e se deitar novamente e tentar dormir.*", 50)
+			escrever_delay("\n*aquele leve frio na barriga onde nn sabemos muito o porque,mas so vai aumentando...*", 50)
 			u.aguarde(100)
+			escrever_delay("\n*por nn se sentir tao bem,marina liga para seu chefe,e decide que eh melhor nn ir ao trabalho hoje..", 50)
 			leia(enter)
 			limpa()
 			pare
@@ -337,15 +338,26 @@ programa
 	
 			
 			
-			escrever_delay("\n*marina rapidamente desliga a tv,tentando tirar tudo aquilo de sua cabeca.Ela se levante e se arruma para o trabalho.*", 50)
+			escrever_delay("\n*Marina rapidamente desliga a TV..*", 50)
 			u.aguarde(200)
-			escrever_delay("\n*enquato anda ate seu trabalho,ela fica constantemente olhando seu arredor..aquelas cenas realmente se fixaram em sua cabeca..*", 50)
+			escrever_delay("\n*inicialmente ela nn pensa muito naquilo.*", 50)
 			u.aguarde(100)
-			escrever_delay("\n*e se tiver alguem assim por perto??? e se virem atras de mim??? eh tudo que passou em sua cabeca o dia inteiro.*", 50)
+			escrever_delay("\n*ele se arruma para o trabalho e sai de casa...*", 50)
 			u.aguarde(100)
-			escrever_delay("\n*o dia de trabalho passa como um borrao,ela faz o que deve ser feito o mais rapido possivel so pensando em chegar em casa.*", 50)
+			escrever_delay("\n*o dia de trabalho foi chato como sempre,anotar,servir,e escutar reclamacao.*", 50)
 			u.aguarde(100)
-			escrever_delay("\n*o caminho pra casa eh tao paranoico quanto a ida,ate que marina chega em sua casa e se tranca,indo direto pra cama.*", 50)
+			escrever_delay("\n*mas..aquilo ainda pulsava na mente de Marina..*", 50)
+			u.aguarde(500)
+			escrever_delay("\n*marina volta para casa com um pensamento na cabeca: .*", 50)
+			u.aguarde(100)
+			leia(enter)
+			limpa()
+
+			escrever_delay("\n*realmente ajuda a gente so olhar para isso pensando \"que pena\"?.*", 50)
+			u.aguarde(100)
+			escrever_delay("\n*nn tem nada que a gente possa pelo menos tentar?.*", 50)
+			u.aguarde(100)
+			escrever_delay("\n*marina se deita na cama com seus questionamentos...*", 50)
 			u.aguarde(100)
 			leia(enter)
 			limpa()
@@ -425,8 +437,7 @@ programa
 				u.aguarde(100)
 				escrever_delay("\n*junto com isso..vozes desesperadas implorando por socorro...*", 50)
 				u.aguarde(100)
-				escrever_delay("*implorando para aquilo parar...*", 100)
-				u.aguarde(200)
+				
 				leia(enter)
 				limpa()
 	
