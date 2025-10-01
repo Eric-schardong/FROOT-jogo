@@ -486,8 +486,17 @@ programa
 			escrever_delay("       SEM FOME\n",60)
 			u.aguarde(4000)
 			limpa()
-			escrever_delay("Marina acorda com uma ligacao de seu chefe... mas decido desligar\n",90)
-			escrever_delay("Marina olha para a janela e observa a chuva e um pouco de seu reflexo quase invisivel...\n",90)
+			escrever_delay("Marina acorda com uma ligacao de seu chefe... \n",90)
+			escrever_delay("[Marina] Alo?.. \n",90)
+			escrever_delay("[Chefe] Por que ainda nao veio ao trabalho?!\n",50)
+			escrever_delay("[Marina] Ainda nao comecou meu turno \n",90)
+			escrever_delay("[Chefe] Nao importa, venha agora!\n",50)
+			escrever_delay("[Marina] ...\n",90)
+			u.aguarde(150)
+			escrever_delay("[Marina] Nao.\n",40)
+			u.aguarde(35)
+			escrever_delay("Marina desliga o telefone\n",40)
+			escrever_delay("Marina entao olha para a janela e observa a chuva e um pouco de seu reflexo quase invisivel...\n",90)
 			escrever_delay("Era como se fosse a primeira vez que Marina se sentia como ela mesma...\n",90)
 			u.aguarde(4500)
 			trocar_musica("AnotherRoad.mp3")
@@ -500,8 +509,18 @@ programa
 			escrever_delay("[Marina] Não há preucupação\n", 70)
 			escrever_delay("[Marina] Hora de me acalmar\n", 70)
 			u.aguarde(8000)
+			para(inteiro i = 0; i <= 80; i++)
+			{
+			limpa()
+			escreva("★   .  #### ## ##   ## ★  . .\n     . ##   ## ### ###      \n . ★   #### ## ## # ## .  ★  \n     . ##   ## ##   ##       ★\n ★  .  ##   ## ##   ## ★  .  ")
+			u.aguarde(200)
+			limpa()
+			escreva(".   ★  #### ## ##   ## ★  .  \n       ##   ## ### ###      \n .     #### ## ## # ## .  .  \n ★  ★  ##   ## ##   ##  ★    .\n    .  ##   ## ##   ##      ★")
+			u.aguarde(200)
+			}
 			pare
 			}
+			
 			
 	}	
 	funcao escrever_delay(cadeia texto, inteiro delay)
