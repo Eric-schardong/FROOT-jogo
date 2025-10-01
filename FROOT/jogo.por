@@ -186,7 +186,7 @@ programa
 				
 				enquanto(input != 3)
 				{
-				escreva("[1]Ver placa		[2]Ver papel\n		[3]seguir pela estrada")
+				escreva("[1]Ver placa		[2]Ver papel\n[3]seguir pela estrada")
 				leia(input)
 					escolha(input)
 					{
